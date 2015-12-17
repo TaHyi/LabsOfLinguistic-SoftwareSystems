@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f5f4ba975d5b4eeb861945e5954ec6a3" Name="Diagram1">
+        <EntityTypeShape EntityType="Lab4Model.Account_Type" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lab4Model.Address" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lab4Model.BankAccount" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lab4Model.Card" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lab4Model.Card_Type" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lab4Model.Customer" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lab4Model.sysdiagram" Width="1.5" PointX="7.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lab4Model.Transaction" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Lab4Model.Transaction_Type" Width="1.5" PointX="5.25" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="Lab4Model.FK_BankAccount_Account_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="Lab4Model.FK_Customer_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="Lab4Model.FK_BankAccount_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Lab4Model.FK_Card_BankAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="Lab4Model.FK_Transaction_BankAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="Lab4Model.FK_Card_Card_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="Lab4Model.FK_Transaction_Transaction_Type" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

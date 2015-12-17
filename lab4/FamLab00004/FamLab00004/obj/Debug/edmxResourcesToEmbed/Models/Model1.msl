@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Lab4ModelStoreContainer" CdmEntityContainer="Lab4Entities">
+    <EntitySetMapping Name="Account_Type">
+      <EntityTypeMapping TypeName="Lab4Model.Account_Type">
+        <MappingFragment StoreEntitySet="Account_Type">
+          <ScalarProperty Name="Account_Type_ID" ColumnName="Account_Type_ID" />
+          <ScalarProperty Name="Account_Type1" ColumnName="Account_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="Lab4Model.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="Address_ID" ColumnName="Address_ID" />
+          <ScalarProperty Name="Address1" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip_Code" ColumnName="Zip_Code" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankAccounts">
+      <EntityTypeMapping TypeName="Lab4Model.BankAccount">
+        <MappingFragment StoreEntitySet="BankAccount">
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Custormer_ID" ColumnName="Custormer_ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Account_Type_ID" ColumnName="Account_Type_ID" />
+          <ScalarProperty Name="Current_Balance" ColumnName="Current_Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cards">
+      <EntityTypeMapping TypeName="Lab4Model.Card">
+        <MappingFragment StoreEntitySet="Card">
+          <ScalarProperty Name="Card_ID" ColumnName="Card_ID" />
+          <ScalarProperty Name="Card_Reg_Date" ColumnName="Card_Reg_Date" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Card_Type_ID" ColumnName="Card_Type_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Card_Type">
+      <EntityTypeMapping TypeName="Lab4Model.Card_Type">
+        <MappingFragment StoreEntitySet="Card_Type">
+          <ScalarProperty Name="Card_Type_ID" ColumnName="Card_Type_ID" />
+          <ScalarProperty Name="Card_Type1" ColumnName="Card_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Lab4Model.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Address_ID" ColumnName="Address_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Other_Name" ColumnName="Other_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Birth_Date" ColumnName="Birth_Date" />
+          <ScalarProperty Name="Reg_Date" ColumnName="Reg_Date" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Passport_Number" ColumnName="Passport_Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Lab4Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transactions">
+      <EntityTypeMapping TypeName="Lab4Model.Transaction">
+        <MappingFragment StoreEntitySet="Transaction">
+          <ScalarProperty Name="Transaction_ID" ColumnName="Transaction_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Transaction_Type_ID" ColumnName="Transaction_Type_ID" />
+          <ScalarProperty Name="Transaction_Date_Time" ColumnName="Transaction_Date_Time" />
+          <ScalarProperty Name="Transaction_Amount" ColumnName="Transaction_Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transaction_Type">
+      <EntityTypeMapping TypeName="Lab4Model.Transaction_Type">
+        <MappingFragment StoreEntitySet="Transaction_Type">
+          <ScalarProperty Name="Transaction_Type_ID" ColumnName="Transaction_Type_ID" />
+          <ScalarProperty Name="Transaction_Type1" ColumnName="Transaction_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

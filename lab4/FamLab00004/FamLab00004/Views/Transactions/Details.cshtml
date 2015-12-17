@@ -1,0 +1,51 @@
+﻿@model FamLab00004.Models.Transaction
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Transaction_Date_Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transaction_Date_Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transaction_Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transaction_Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccount.Account_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccount.Account_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transaction_Type.Transaction_Type1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transaction_Type.Transaction_Type1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Transaction_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,43 @@
+﻿@model FamLab00004.Models.Card
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Card</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Card_Reg_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Card_Reg_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccount.Account_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccount.Account_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Card_Type.Card_Type1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Card_Type.Card_Type1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Card_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
